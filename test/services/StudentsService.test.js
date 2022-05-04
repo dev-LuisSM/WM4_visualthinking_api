@@ -17,7 +17,7 @@ describe("Test Case: StudentService functions", () => {
 
     test("Get all the students if their credits are more than 500", () => {
         const students = Reader.readJsonFile(studentsJson);
-        const getStudentsWithCredit = StudentService.getStudentsIfCredits500(students);
+        const getStudentsWithCredit = StudentService.getStudentsIfCredits500(students, 500);
         expect(getStudentsWithCredit.length).toBe(27);
     });
 });
