@@ -14,4 +14,11 @@ describe("Test Case: StudentService functions", () => {
         const getCert = StudentService.getEmailIfCertificated(students);
         expect(getCert.length).toBe(29);
     });
+
+    test("Get all the students if their credits are more than 500", () => {
+        const students = Reader.readJsonFile(studentsJson);
+        const getStudentsWithCredit = StudentService.getStudentsIfCredits500(students)
+        console.log(getStudentsWithCredit)
+        expect(getStudentsWithCredit.length).toBe(27)
+    })
 });
