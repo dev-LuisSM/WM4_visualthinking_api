@@ -1,0 +1,29 @@
+{
+  "name": "wm4_visualthinking_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+    "server": "node ./lib/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-LuisSM/WM4_visualthinking_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-LuisSM/WM4_visualthinking_api/issues"
+  },
+  "homepage": "https://github.com/dev-LuisSM/WM4_visualthinking_api#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "jest": "^26.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
