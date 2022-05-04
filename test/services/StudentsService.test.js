@@ -1,5 +1,5 @@
-const Reader = require("./../../lib/utils/Reader");
-const StudentService = require("./../../lib/services/StudentService");
+const Reader = require("../../lib/utils/Reader");
+const StudentService = require("../../lib/services/StudentsService");
 const studentsJson = "visualpartners.json";
 
 describe("Test Case: StudentService functions", () => {
@@ -17,8 +17,7 @@ describe("Test Case: StudentService functions", () => {
 
     test("Get all the students if their credits are more than 500", () => {
         const students = Reader.readJsonFile(studentsJson);
-        const getStudentsWithCredit = StudentService.getStudentsIfCredits500(students)
-        console.log(getStudentsWithCredit)
-        expect(getStudentsWithCredit.length).toBe(27)
-    })
+        const getStudentsWithCredit = StudentService.getStudentsIfCredits500(students);
+        expect(getStudentsWithCredit.length).toBe(27);
+    });
 });
