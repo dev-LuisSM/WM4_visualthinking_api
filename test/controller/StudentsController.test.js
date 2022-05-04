@@ -13,6 +13,6 @@ describe("Test Case: StudentsController function", () => {
 
     test("Get all the students if their credits are more than 500", () => {
         const getStudentsIfCredits500 = StudentsController.getStudentsIfCredits500();
-        expect(getStudentsIfCredits500.length).toBe(27)
+        expect(getStudentsIfCredits500.length).toBe(27);
     });
 });
