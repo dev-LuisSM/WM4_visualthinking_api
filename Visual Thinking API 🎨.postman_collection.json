@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "d944430f-f55a-4476-b3ab-5cf11e5706e4",
+		"name": "Visual Thinking API 🎨",
+		"description": "### Cursos de Visual Thinking API\n\nEl curso de Visual Thinking impartido por [Visual Partner-Ship](https://github.com/visualpartnership) necesita de un API para filtrar cierta información, esta práctica busca satisfacer los siguientes requerimientos\n\n1.  Habilitar un endpoint para consultar todos los estudiantes con todos sus campos.\n2.  Habilitar un endpoint para consultar los emails de todos los estudiantes que tengan certificación haveCertification.\n3.  Habilitar un endpoint para consultar todos los estudiantes que tengan credits mayor a 500.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Todos los estudiantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				},
+				"description": "Obtiene todos los estudiantes inscritos en los cursos independientemente de cualquier parámetro"
+			},
+			"response": []
+		},
+		{
+			"name": "Estudiantes certificados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/certification",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"certification"
+					]
+				},
+				"description": "Obtiene el email de todos los estudiantes que tengan un certificado realizado en cualquier curso de Visual Thinking."
+			},
+			"response": []
+		},
+		{
+			"name": "Estudiantes con ciertos créditos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/certification",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"certification"
+					]
+				},
+				"description": "Obtiene los nombres de los estudiantes que tengan cierta cantidad de créditos para arriba.\n\nEj: Los estudiantes con créditos mayores a 500."
+			},
+			"response": []
+		}
+	]
+}
