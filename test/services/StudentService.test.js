@@ -11,7 +11,7 @@ describe("Test Case: StudentService functions", () => {
 
     test("Get all the students with certification", () => {
         const students = Reader.readJsonFile(studentsJson);
-        const getCert = StudentService.getEmail(students);
+        const getCert = StudentService.getEmailIfCertificated(students);
         expect(getCert.length).toBe(29);
     });
 });
